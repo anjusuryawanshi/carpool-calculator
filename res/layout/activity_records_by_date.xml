@@ -1,0 +1,53 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HeaderTable"
+    android:layout_width="fill_parent"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_height="wrap_content" 
+    android:background="@android:color/black">
+    
+    <TableRow>
+        	<TextView android:id="@+id/LblRecordDate"
+        	    		android:textColor="@android:color/black"
+        		    	android:layout_margin="1dp"
+    					android:gravity="center_horizontal"
+    					android:layout_weight="1"
+    					android:background="#ffcccccc"
+           				android:text="@string/LblRecordDate"/>
+
+        	<TextView
+        	    android:id="@+id/LblRecordPeople"
+        	    android:textColor="@android:color/black"
+    			android:gravity="center_horizontal"
+    			android:layout_weight="1"
+    			android:layout_margin="1dp"
+    			android:background="@android:color/white"
+        	    android:text="@string/LblRecordPeople" />
+
+        	<TextView
+        	    android:id="@+id/LblRecordMiles"
+        	    android:textColor="@android:color/black"
+    			android:gravity="center_horizontal"
+    			android:layout_weight="1"
+    			android:layout_margin="1dp"
+    			android:background="@android:color/white"
+        	    android:text="@string/LblRecordMiles" />
+
+        	<TextView
+        	    android:id="@+id/LblRecordIndividualExpense"
+        	    android:textColor="@android:color/black"
+    			android:gravity="center_horizontal"
+    			android:layout_weight="1"
+    			android:layout_margin="1dp"
+    			android:background="@android:color/white"
+        	    android:text="@string/LblRecordIndividualExpense" />
+        	
+        	</TableRow>
+        
+ </TableLayout>
+ 
+     
+     
+
+     

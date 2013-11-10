@@ -1,0 +1,63 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:stretchColumns="1">
+    
+    <TableRow>
+        
+       <TextView 
+        		    	android:id="@+id/LblStartDate"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblStartDate"
+        		    />
+      <!--  <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_column="1"
+        />-->
+
+        		 <EditText
+        		    android:id="@+id/txtStartDate"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_column="1"
+        		    android:ems="10"
+        		     /> 
+         
+        
+    </TableRow>
+    <TableRow>
+        
+        <TextView 
+        		    	android:id="@+id/LblEndDate"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblEndDate"
+        		    />
+        
+        <EditText
+        		    android:id="@+id/txtEndDate"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_column="1"
+        		    android:ems="10"
+        		     /> 
+        
+    </TableRow>
+    <TableRow >
+        
+        <Button android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnDisplay" 
+                android:layout_column="0"
+                android:layout_span="1"/>
+    </TableRow>
+    
+
+</TableLayout>

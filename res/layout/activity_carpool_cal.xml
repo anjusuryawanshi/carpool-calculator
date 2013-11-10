@@ -1,0 +1,224 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:stretchColumns="1">
+    
+    <!-- Row 1 -->
+    <TableRow >
+        		<TextView 
+        		    	android:id="@+id/LblMiles"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblMiles"
+        		    />
+
+        		<EditText
+        		    android:id="@+id/txtMiles"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_span="2"
+        		    android:ems="10"
+        		    android:inputType="numberDecimal" />
+        
+    </TableRow>
+    
+    <TableRow >
+        
+        		<TextView 
+        		    	android:id="@+id/LblPeople"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblPeople"
+        		    />
+
+        		<EditText
+        		    android:id="@+id/txtPeople"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_span="3"
+        		    android:ems="10"
+        		    android:inputType="number" />
+            
+    </TableRow>
+    <TableRow >
+        
+        		<TextView 
+        		    	android:id="@+id/LblGasPrice"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblGasPrice"
+        		    />
+
+        		<EditText
+        		    android:id="@+id/txtGasPrice"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_span="3"
+        		    android:ems="10"
+        		    android:inputType="numberDecimal" >
+
+        		    
+        		</EditText>
+            
+    </TableRow>
+    
+    <TableRow >
+        
+        		<TextView 
+        		    	android:id="@+id/LblCarMileage"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblCarMileage"
+        		    />
+
+        		<EditText
+        		    android:id="@+id/txtCarMileage"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_span="3"
+        		    android:ems="10"
+        		    android:inputType="numberDecimal" />
+
+    </TableRow>
+    
+    <TableRow >
+        
+        		<TextView 
+        		    	android:id="@+id/LblTollCharges"
+        		    	android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_column="0"
+        				android:text="@string/LblTollCharges"
+        		    />
+
+        		<EditText
+        		    android:id="@+id/txtTollCharges"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_span="2"
+        		    android:ems="10"
+        		    android:inputType="numberDecimal" />
+
+    </TableRow>
+    
+    <!--  Row for the Calculate and Rest buttons. The Calculate button
+         is placed at column two, and Reset at column three -->         
+        <TableRow>
+            
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnReset" 
+                android:layout_column="0"
+                android:layout_span="1"/>
+            
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="1"
+                android:text="@string/btnCalculate" />
+
+            
+           
+        </TableRow>    
+       <!-- TableLayout allows any other views to be inserted between
+         the TableRow elements. So inserting a blank view to create a
+         line separator. This separator view is used to separate
+         the area below the buttons which will display the
+         calculation results -->
+        <View
+                android:layout_height="2dp"
+                android:background="#DDFFDD"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"/>
+        
+        <!-- Again table row is used to place the result textviews
+         at column zero and the result in textviews at column two -->
+        <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/LblTotalGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/LblTotalGas" />
+
+        <TextView
+                android:id="@+id/txtTotalGasExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="1"/>                      
+        </TableRow>
+        
+        <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/LblTotalExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/LblTotalExpense" />
+
+        <TextView
+                android:id="@+id/txtTotalExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="1"/>                      
+        </TableRow>
+        
+        <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/LblExpensePerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/LblExpensePerPerson" />
+
+        <TextView
+                android:id="@+id/txtExpensePerPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="1"/>                      
+        </TableRow>
+        <TableRow >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/btnSave" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/btnDelete" />
+
+        </TableRow>
+        
+        <TableRow >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/btnSearch" />
+            </TableRow>
+
+</TableLayout>
